@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Matheus Boxerrr</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>Matheus Boxerrr</h1>
+            <p>Olá, meu nome é Matheus, e estou começando a trabalhar com edição de vídeo profissionalmente. Edito vídeos desde os 14 anos, e hoje, aos 19, transformei minha paixão em profissão.</p>
+            <p>Gosto de explorar técnicas criativas em vídeos curtos e longos, criando edições que chamam atenção e têm personalidade.</p>
+            <p>Instagram: <a href="https://instagram.com/matheus_boxerrr" target="_blank">@matheus_boxerrr</a></p>
+        </div>
+    </header>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="curtos">Curtos</button>
+            <button class="filter-btn" data-filter="longos">Longos</button>
+            <button class="filter-btn" data-filter="todos">Todos</button>
+        </div>
+        <div class="videos-container" id="videos-container"></div>
+    </section>
+
+    <!-- Diferencial -->
+    <section id="diferencial">
+        <h2>Diferencial</h2>
+        <div class="diferencial-cards">
+            <div class="card">
+                <h3>Cortes Precisos</h3>
+                <p>Edits limpos e ritmados que destacam a narrativa.</p>
+            </div>
+            <div class="card">
+                <h3>Color Grading</h3>
+                <p>Ajustes de cor que dão impacto visual aos vídeos.</p>
+            </div>
+            <div class="card">
+                <h3>Motion Effects</h3>
+                <p>Animações e transições criativas deixam o vídeo dinâmico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section id="avaliacoes">
+        <h2>Avaliações</h2>
+        <p>Deixe sua avaliação sobre meu trabalho:</p>
+        <form id="form-avaliacao">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <textarea id="comentario" placeholder="Escreva sua avaliação" required></textarea>
+            <select id="nota" required>
+                <option value="">Nota</option>
+                <option value="5">5 ⭐</option>
+                <option value="4">4 ⭐</option>
+                <option value="3">3 ⭐</option>
+                <option value="2">2 ⭐</option>
+                <option value="1">1 ⭐</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="avaliacoes-lista"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Matheus Boxerrr. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
